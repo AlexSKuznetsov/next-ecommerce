@@ -8,9 +8,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cd frontend && yarn lint:staged",
-      "pre-push": "cd frontend && yarn prepush"
+      "pre-commit": "yarn lint:staged",
+      "pre-push": "yarn prepush"
     }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "cd frontend && yarn lint",
+      "cd frontend yarn format"
+    ]
   },
   "repository": {
     "type": "git",

@@ -9,19 +9,13 @@
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write .",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "lint": "eslint . --ext ts --ext tsx --ext js --color",
     "lint:js:coverage": "eslint . --ext .js,.ts,.tsx -o ./.reports/eslint-report.json -f json || exit 0",
     "lint:staged": "lint-staged",
     "prepush": "run-p -c lint test:changed",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest"
-  },
-  "lint-staged": {
-    "*.@(ts|tsx)": [
-      "yarn lint",
-      "yarn format"
-    ]
   },
   "keywords": [],
   "author": "Alexandr Kuznetsov",
@@ -61,7 +55,6 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-testing-library": "^4.9.1",
     "jest": "^27.0.6",
-    "lint-staged": "^11.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "react-is": "^17.0.2",
