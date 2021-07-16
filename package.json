@@ -4,13 +4,8 @@
   "description": "Next js e-commerce boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint:staged",
-      "pre-push": "yarn prepush"
-    }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
@@ -30,6 +25,7 @@
   },
   "homepage": "https://github.com/AlexSKuznetsov/next-ecommerce#readme",
   "devDependencies": {
-    "husky": "^7.0.1"
+    "husky": ">=6",
+    "lint-staged": ">=10"
   }
 }
