@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "cd frontend && yarn lint",
+    "format": "cd frontend && yarn format"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "cd frontend && yarn lint",
-      "cd frontend yarn format"
+      "yarn lint",
+      "yarn format"
     ]
   },
   "repository": {
