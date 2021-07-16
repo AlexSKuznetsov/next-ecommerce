@@ -21,7 +21,7 @@ function HomePage() {
       <div tw="mt-4 mx-4">
         <h1>Welcome to Next.js E-commerce boilerplate!</h1>
         <Button variant="primary" isSmall>
-          Test button!
+          Test button
         </Button>
       </div>
     </>
