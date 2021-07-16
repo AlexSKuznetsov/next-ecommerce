@@ -1,0 +1,29 @@
+{
+  "name": "next-ecommerce",
+  "version": "1.0.0",
+  "description": "Next js e-commerce boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cd frontend && yarn lint:staged",
+      "pre-push": "cd frontend && yarn prepush"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSKuznetsov/next-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "Alexandr Kuznetsov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexSKuznetsov/next-ecommerce/issues"
+  },
+  "homepage": "https://github.com/AlexSKuznetsov/next-ecommerce#readme",
+  "devDependencies": {
+    "husky": "^7.0.1"
+  }
+}
