@@ -1,11 +1,7 @@
 import { GlobalStyles } from 'twin.macro'
+import type { AppProps } from 'next/app'
 
-interface Props {
-  Component: React.FC
-  pageProps: any
-}
-
-const App = ({ Component, pageProps }: Props) => (
+const App = ({ Component, pageProps }: AppProps) => (
   <div>
     <GlobalStyles />
     <Component {...pageProps} />
